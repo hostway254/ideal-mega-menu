@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Ideal_Mega_Menu_Walker extends Walker_Nav_Menu {
 
     /**
-     * Track the current mega menu item depth.
+     * Track whether mega menu is enabled for the current top-level item.
      *
      * @var bool
      */

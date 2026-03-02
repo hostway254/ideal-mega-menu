@@ -68,10 +68,6 @@ class Ideal_Mega_Menu_Frontend {
     public function modify_nav_menu_args( $args ) {
         // Only replace walker if a theme location is assigned and we haven't already set one.
         if ( ! empty( $args['theme_location'] ) && ! ( $args['walker'] instanceof Ideal_Mega_Menu_Walker ) ) {
-            // Check if this menu location has mega menu enabled.
-            $enabled_locations = Ideal_Mega_Menu::get_setting( 'enabled_locations', array() );
-
-            // Apply to all menus by default, or only selected ones.
             $args['walker']    = new Ideal_Mega_Menu_Walker();
             $args['container'] = 'nav';
             $args['container_class'] = 'imm-mega-menu-container imm-style-' . sanitize_html_class( Ideal_Mega_Menu::get_setting( 'menu_style', 'default' ) );

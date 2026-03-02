@@ -414,7 +414,10 @@ class Ideal_Mega_Menu_Admin {
         foreach ( $fields as $meta_key => $post_key ) {
             // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Nonce handled by WP menu save.
             if ( isset( $_POST[ $post_key ][ $menu_item_db_id ] ) ) {
-                $value = sanitize_text_field( wp_unslash( $_POST[ $post_key ][ $menu_item_db_id ] ) );
+                $raw_value = wp_unslash( $_POST[ $post_key ][ $menu_item_db_id ] );
+                $value = ( '_imm_image' === $meta_key )
+                    ? esc_url_raw( $raw_value )
+                    : sanitize_text_field( $raw_value );
                 update_post_meta( $menu_item_db_id, $meta_key, $value );
             } else {
                 delete_post_meta( $menu_item_db_id, $meta_key );

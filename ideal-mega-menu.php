@@ -119,15 +119,13 @@ class Ideal_Mega_Menu {
         if ( false === get_option( 'ideal_mega_menu_settings' ) ) {
             add_option( 'ideal_mega_menu_settings', $defaults );
         }
-
-        flush_rewrite_rules();
     }
 
     /**
      * Plugin deactivation.
      */
     public function deactivate() {
-        flush_rewrite_rules();
+        // Clean up if needed.
     }
 
     /**
