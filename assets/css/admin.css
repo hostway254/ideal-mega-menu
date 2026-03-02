@@ -1,0 +1,91 @@
+/**
+ * Ideal Mega Menu - Admin Styles
+ *
+ * @package Ideal_Mega_Menu
+ * @version 1.0.0
+ */
+
+/* Settings Page */
+.imm-settings-wrap {
+    max-width: 800px;
+}
+
+.imm-settings-header {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.imm-settings-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.imm-settings-info {
+    background: #f0f6fc;
+    border: 1px solid #c8d6e5;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 20px;
+}
+
+.imm-settings-info h3 {
+    margin-top: 0;
+    color: #1d2327;
+}
+
+.imm-settings-info ol {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.imm-settings-info li {
+    margin-bottom: 6px;
+}
+
+/* Menu Item Custom Fields */
+.imm-menu-item-settings {
+    background: #f7f9fc;
+    border: 1px solid #dce1e8;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin: 10px 0;
+}
+
+.imm-menu-item-settings .imm-field-title {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dce1e8;
+    color: #0073aa;
+}
+
+.imm-menu-item-settings p.description {
+    margin-bottom: 8px;
+}
+
+.imm-menu-item-settings label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.imm-menu-item-settings input[type="text"],
+.imm-menu-item-settings input[type="url"],
+.imm-menu-item-settings select {
+    max-width: 300px;
+}
+
+.imm-menu-item-settings .imm-upload-image {
+    margin-top: 4px;
+    margin-left: 0;
+}
+
+.imm-menu-item-settings input[type="color"] {
+    width: 50px;
+    height: 30px;
+    padding: 2px;
+    cursor: pointer;
+}
